@@ -1,9 +1,16 @@
+
+# Git files
 .gitignore
+.git
 
-# dependencies
-/node_modules
+# Docker files
+Dockerfile
+.dockerignore
 
-# local env files
+# Dependencies
+node_modules
+
+# Local env files
 .env.local
 .env.development.local
 .env.test.local
