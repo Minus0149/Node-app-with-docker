@@ -1,4 +1,3 @@
 # Node-app-with-docker
 
-Use it to run the container
-`docker run -p 3000:3000 -v ${pwd}:/app -d --name node-app node-app-image`
+Use `docker run -p 3000:3000 -v ${pwd}:/app -v /app/node_modules -d --name node-app node-app-image` To run the Docker container.
