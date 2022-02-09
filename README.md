@@ -1,6 +1,19 @@
 # Node-app-with-docker
 
-Use `docker-compose up -d` To run the Docker container.
-Use `docker-compose up -d --build` To run the Docker container with forced changes and rebuilded image.
-Use `docker-compose down ` To stop the Docker container.
-Use `docker-compose down -v` To stop the Docker container and delete the volumes created by the container.
+Run
+`docker-compose -f docker-compose -f docker-compose.dev.yml up -d`
+to run the Docker container in development mode.
+
+Run
+`docker-compose -f docker-compose -f docker-compose.prod.yml up -d`
+to run the Docker container in production mode.
+
+Run
+`docker-compose -f docker-compose -f docker-compose.dev.yml down`
+to stop the development Docker container.
+
+Run
+`docker-compose -f docker-compose -f docker-compose.prod.yml down`
+to stop the production Docker container.
+
+Note : add -v flag while deleting an container to remove all the volumes made by the containers
