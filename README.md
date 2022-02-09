@@ -16,4 +16,6 @@ Run
 `docker-compose -f docker-compose -f docker-compose.prod.yml down`
 to stop the production Docker container.
 
-Note : add -v flag while deleting an container to remove all the volumes made by the containers
+Note :
+Add -v flag while deleting an container to remove all the volumes made by the containers.
+Add --build flag while creating a container with changes made in dockerfile.
