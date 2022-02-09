@@ -6,6 +6,7 @@
 # Docker files
 Dockerfile
 .dockerignore
+docker-compose*.yml
 
 # Dependencies
 node_modules
